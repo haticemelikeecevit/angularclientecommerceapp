@@ -1,0 +1,15 @@
+<h2>Category List</h2>
+
+<div>
+  <button (click)="add()">
+    Add
+  </button>
+</div>
+
+<ul class="categories">
+  <li *ngFor="let c of categories;">
+    <a>
+      <span class="badge">{{c.id}}</span> {{c.name}}
+    </a>
+  </li>
+</ul>
